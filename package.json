@@ -1,0 +1,45 @@
+{
+  "name": "mark-twain-test",
+  "version": "2.0.2",
+  "description": "Parse Markdown into JsonML.",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint ./index.js ./src ./test",
+    "eslint-fix": "eslint --fix ./index.js ./src ./test",
+    "test": "npm run lint && mocha"
+  },
+  "keywords": [
+    "markdown",
+    "yaml",
+    "parser",
+    "jsonml"
+  ],
+  "author": "Benjy Cui <benjytrys@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjycui/mark-twain.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjycui/mark-twain/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jsonml.js": "^0.1.0",
+    "remark": "^5.0.1",
+    "yaml-front-matter": "^3.4.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "eslint": "^3.0.0",
+    "eslint-config-egg": "^4.2.0",
+    "express": "^4.15.4",
+    "fs": "0.0.1-security",
+    "mark-twain": "^2.0.2",
+    "mocha": "^3.4.2",
+    "request": "^2.81.0"
+  },
+  "homepage": "https://github.com/benjycui/mark-twain#readme",
+  "directories": {
+    "test": "test"
+  }
+}
