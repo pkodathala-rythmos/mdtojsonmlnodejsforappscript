@@ -16,5 +16,10 @@ app.post('/convert',bodyParser, function(req, res) {
         }
     });
 });
+
+ app.get('/api/ping', function (req, res) {
+        res.send({message: 'pong'});
+      });
+
 app.listen(process.env.PORT||3001);
 console.log('Listening on port 3001...');
